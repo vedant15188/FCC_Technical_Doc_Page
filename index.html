@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet"/>
+    <title>FCC: Technical Documentation Page</title>
+    <!--suppress CssInvalidPropertyValue -->
+    <style>
+        .alert-warning {
+            border-left: 4px #f0ad4e solid;
+            color: #000000;
+        }
+        p {
+            font-size: 19px;
+        }
+
+        .link {
+            background-color: rgba(187, 239, 253, 0.3);
+            border-bottom: rgba(0, 0, 0, 0.2) 1px solid;
+            color: inherit;
+        }
+
+        .link:hover {
+            background-color: #bbeffd;
+            border-bottom-color: #1b1e21;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /*.bs {*/
+            /*border: #000000 solid 1px;*/
+        /*}*/
+
+        /*.bs1 {*/
+        /*border: #1e7e34 solid 1px;*/
+        /*}*/
+
+        .sticky {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            text-align: center;
+        }
+
+        ul {
+            width: 100%;
+        }
+
+        li {
+            padding: 10px 0 10px 0;
+            font-size: 20px;
+        }
+
+        .navbar {
+            padding: 0 0 0 0;
+            height: -webkit-fill-available;
+        }
+
+        #sidebar {
+            background: #1e7e34;
+            padding: 0;
+        }
+
+        #content {
+            padding: 30px 0 0;
+        }
+
+        #header {
+            height: auto;
+        }
+
+        .center {
+            display: inline;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="row" style="margin: 0">
+    <div class="col-2" id="sidebar" style="border-right: #a5a5a5 2px solid">
+        <div class="sticky">
+            <header id="header">
+                <nav id="nav-bar" class="navbar navbar-light bg-light">
+                    <ul class="navbar-nav mr-auto ">
+                        <li class="nav-item">
+                            <a class="navbar-brand nav-link center" href="#start">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2000px-React-icon.svg.png"
+                                     height="75" alt="ReactJS Logo" id="header-img">
+                                <div class="h2" style="display: inline">React</div>
+                            </a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#start">Getting Started</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#main-concepts">Main Concepts</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Advanced">Advanced Guides</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#api">API Reference</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+    </div>
+    <div class="col-10" id="content">
+        <div class="container">
+            <h1 id="start" class="display-3">React Docs</h1>
+            <hr color="#000">
+            <h4>This page is an overview of the React documentation and related resources.</h4>
+            <br><br><br>
+            <p>
+                <b>React </b>is a JavaScript library for building user interfaces. Learn what React is all about on our
+                <a href="https://reactjs.org" class="link">homepage</a> or in <a class="link" href="https://reactjs.org/tutorial/tutorial.html"> the tutorial.</a>
+            </p><br><br>
+
+            <h2>Try React</h2><br>
+            <p>
+                React has been designed from the start for gradual adoption, and you can use as little or as much React as you need. Whether you want to get a taste of React,
+                add some interactivity to a simple HTML page, or start a complex React-powered app, the links in this section will help you get started.
+            </p><br><br>
+
+            <h2>Online Playgrounds</h2><br>
+            <p>
+                If you’re interested in playing around with React, you can use an online code playground. Try a Hello World template on
+                <a class="link" href="https://codepen.io"> CodePen</a> or <a class="link" href="https://codesandbox.io/s/new"> CodeSandbox</a>.
+            </p>
+            <p>
+                If you prefer to use your own text editor, you can also download
+                <a class="link" href="https://raw.githubusercontent.com/reactjs/reactjs.org/master/static/html/single-file-example.html">this HTML file</a>,
+                edit it, and open it from the local filesystem in your browser. It does a slow runtime code transformation, so we’d only recommend using this for simple demos.
+            </p><br><br>
+
+            <h2>Learn React</h2><br>
+            <p>
+                People come to React from different backgrounds and with different learning styles. Whether you prefer a more theoretical or a practical approach,
+                we hope you’ll find this section helpful.<br>
+            </p><br>
+            <h3>Familiarity with Javascript</h3><br>
+            <p>
+                The React documentation assumes some familiarity with programming in the JavaScript language. You don’t have to be an expert, but it’s harder to learn both React and
+                JavaScript at the same time. We recommend going through this JavaScript overview shown below to check your knowledge level. It will take you between 30 minutes and an hour
+                but you will feel more confident learning React.
+            </p><br>
+                <iframe width="1067" height="600" src="https://www.youtube.com/embed/IEf1KAcK6A8" id="video"
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+
+            <div class="alert alert-warning">
+                <h5>Tip</h5>
+
+                <p>
+                    Whenever you get confused by something in JavaScript,
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="link"> MDN</a> and <a href="http://javascript.info/" class="link"> javascript.info</a>
+                    are great websites to check. There are also <a href="https://reactjs.org/community/support.html" class="link"> community support forums</a> where you can ask for help.
+                </p>
+            </div><br><br>
+
+            <h2 id="main-concepts">Getting Started</h2><br>
+            <p>
+                In this guide, we will examine the building blocks of React apps: elements and components. Once you master them, you can create complex apps from small reusable pieces.
+            </p><br>
+
+            <p>
+                This is the first chapter in a step-by-step guide about main React concepts. You can find a list of all its chapters in the navigation
+                This guide is designed for people who prefer learning concepts step by step. If you prefer to learn by doing, check out our practical tutorial.
+                You might find this guide and the tutorial complementary to each other.
+            </p><br>
+            <h3>Knowledge Level Assumptions</h3><br>
+            <p>
+                React is a JavaScript library, and so we’ll assume you have a basic understanding of the JavaScript language. If you don’t feel very confident, we recommend going
+                through a JavaScript tutorial to check your knowledge level and enable you to follow along this guide without getting lost. It might take you between 30 minutes and an
+                hour, but as a result you won’t have to feel like you’re learning both React and JavaScript at the same time.
+            </p><br>
+            <h3>JSX</h3><br>
+            <p>
+                React embraces the fact that rendering logic is inherently coupled with other UI logic: how events are handled, how the state changes over time, and how the data is prepared
+                for display. React doesn’t require using JSX, but most people find it helpful as a visual aid when working with UI inside the JavaScript code. It also allows React to
+                show more useful error and warning messages. After compilation, JSX expressions become regular JavaScript function calls and evaluate to JavaScript objects.
+                After compilation, JSX expressions become regular JavaScript function calls and evaluate to JavaScript objects.
+            </p><br>
+            <h3>Rendering Elements</h3><br>
+            <p>
+                Elements are the smallest building blocks of React apps. Unlike browser DOM elements, React elements are plain objects, and are cheap to create. React DOM takes care of
+                updating the DOM to match the React elements. To render a React element into a root DOM node, pass both to <b>ReactDOM.render()</b>.
+            </p>
+            <p>
+                React elements are immutable. Once you create an element, you can’t change its children or attributes. An element is like a single frame in a movie:
+                it represents the UI at a certain point in time. React Only Updates What’s Necessary
+            </p><br>
+            <h3>Components and Props</h3><br>
+            <p>
+                Components let you split the UI into independent, reusable pieces, and think about each piece in isolation.
+                This page provides an introduction to the idea of components. You can find a
+                <a href="https://reactjs.org/docs/react-component.html" class="link"> detailed component API reference here</a>.
+            </p>
+            <p>
+                Conceptually, components are like JavaScript functions. They accept arbitrary inputs (called “props”) and return React elements describing what should appear on the screen.
+                The simplest way to define a component is to write a JavaScript function. You can also use an ES6 class to define a component.
+                Components can refer to other components in their output. This lets us use the same component abstraction for any level of detail.
+            </p><br><br>
+
+            <h2 id="Advanced">Advanced Guides</h2><br>
+            <p>
+                React and <a class="link" href="https://developer.mozilla.org/en-US/docs/Web/Web_Components"> Web Components</a> are built to solve different problems. Web Components provide
+                strong encapsulation for reusable components, while React provides a declarative library that keeps the DOM in sync with your data. The two goals are complementary.
+                As a developer, you are free to use React in your Web Components, or to use Web Components in React, or both.
+            </p><br>
+            <h3>Higher-Order Components</h3><br>
+            <p>
+                A higher-order component (HOC) is an advanced technique in React for reusing component logic. HOCs are not part of the React API, per se.
+                They are a pattern that emerges from React’s compositional nature.
+                Concretely, a higher-order component is a function that takes a component and returns a new component.
+            </p><br>
+            <div class="alert alert-warning">
+                <h5>Note</h5>
+
+                <p>
+                    We previously recommended mixins as a way to handle cross-cutting concerns. We’ve since realized that mixins create more trouble than they are worth.
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="link"> Read More</a> about why we’ve moved away from mixins and how you can
+                    transition your existing components.
+                </p>
+            </div><br>
+
+            <h3>Render Props</h3><br>
+            <p>
+                The term “render prop” refers to a technique for sharing code between React components using a prop whose value is a function.
+                A render prop is a function prop that a component uses to know what to render. One interesting thing to note about render props is that you can implement most
+                higher-order components (HOC) using a regular component with a render prop.
+            </p><br>
+
+            <h3>Forwarding Refs</h3><br>
+            <p>
+                Ref forwarding is a technique for automatically passing a <a href="https://reactjs.org/docs/refs-and-the-dom.html" class="link"> ref</a> through a component to
+                one of its children. This is typically not necessary for most components in the application. However, it can be useful for some kinds of components,
+                especially in reusable component libraries. The most common scenarios are described below.
+            </p>
+            <ol>
+                <li>Forwarding refs to DOM components</li>
+                <li>Forwarding refs in higher-order components</li>
+                <li>Displaying a custom name in DevTools</li>
+            </ol><br><br>
+
+            <h2 id="api">React Top-Level API</h2><br>
+            <p>
+                React is the entry point to the React library. If you load React from a <b>&lt;script&gt;</b> tag, these top-level APIs are available on the React global.
+                If you use ES6 with npm, you can write <b>import React from 'react'</b>. If you use ES5 with npm, you can write <b>var React = require('react')</b>.
+            </p><br><br>
+            <h3><b>Overview</b></h3><br>
+            <h4>Components</h4><br>
+            <p>
+                React components let you split the UI into independent, reusable pieces, and think about each piece in isolation.
+                React components can be defined by subclassing React.Component or React.PureComponent.
+            </p><br>
+            <h4>Creating React Elements</h4><br>
+            <p>
+                We recommend using JSX to describe what your UI should look like. Each JSX element is just syntactic sugar for calling React.createElement().
+                See <a href="https://reactjs.org/docs/react-without-jsx.html" class="link"> Using React without JSX</a> for more information.
+            </p>
+            <h4>Transforming Elements</h4><br>
+            <ul>
+                <li><a href="https://reactjs.org/docs/react-api.html#cloneelement" class="link">cloneElement()</a></li>
+                <li><a href="https://reactjs.org/docs/react-api.html#isvalidelement" class="link">isValidElement()</a></li>
+                <li><a href="https://reactjs.org/docs/react-api.html#reactchildren" class="link">React.Children</a></li>
+            </ul><br>
+            <h4>Fragments</h4><br>
+            <p>
+                React also provides a component for rendering multiple elements without a wrapper. See
+                <a href="https://reactjs.org/docs/react-api.html#reactfragment" class="link">React.Fragment</a>
+            </p><br>
+            <h4>Refs</h4><br>
+            <ul>
+                <li><a href="https://reactjs.org/docs/react-api.html#reactcreateref" class="link">React.createRef</a></li>
+                <li><a href="https://reactjs.org/docs/react-api.html#reactforwardref" class="link">React.forwardRef</a></li>
+            </ul><br>
+            <h4>Suspense</h4><br>
+            <p>
+                Suspense lets components “wait” for something before rendering.
+                Today, Suspense only supports one use case: <a href="https://reactjs.org/docs/code-splitting.html#reactlazy" class="link">loading components dynamically with React.lazy</a>.
+                In the future, it will support other use cases like data fetching.
+            </p><br>
+            <ul>
+                <li><a href="https://reactjs.org/docs/react-api.html#reactlazy" class="link">React.lazy</a></li>
+                <li><a href="https://reactjs.org/docs/react-api.html#reactsuspense" class="link">React.Suspense</a></li>
+            </ul><br><br>
+
+            <h2 id="faq">FAQ</h2><br><br>
+            <h3>Is there a recommended way to structure React projects?</h3><br>
+            <p>React doesn’t have opinions on how you put files into folders. That said there are a few common approaches popular in the ecosystem you may want to consider.</p>
+            <ul>
+                <li>Grouping by features or routes</li>
+                <li>Grouping by file type</li>
+                <li>Avoid too much nesting</li>
+                <li>Don’t overthink it</li>
+            </ul><br>
+
+            <h3>How do I add CSS classes to components?</h3><br>
+            <p>Pass a string as the className prop.</p><br>
+
+            <h3>Can I use inline styles?</h3><br>
+            <p>Yes, see the docs on styling <a href="https://reactjs.org/docs/dom-elements.html#style" class="link">here</a>.</p><br>
+
+            <h3>Can I do animations in React?</h3><br>
+            <p>
+                React can be used to power animations. See
+                <a href="https://reactcommunity.org/react-transition-group/" class="link"> React Transition Group</a> and
+                <a href="https://github.com/chenglou/react-motion" class="link"> React Motion</a>, for examples.
+            </p><br>
+
+            <h3>Where in the component lifecycle should I make an AJAX call?</h3><br>
+            <p>You should populate data with AJAX calls in the <a href="https://reactjs.org/docs/react-component.html#mounting" class="link"> componentDidMount</a> lifecycle method.
+                 This is so you can use setState to update your component when the data is retrieved.</p><br>
+
+            <h3>Do I need to use JSX with React?</h3><br>
+            <p>No! Check out <a href="https://reactjs.org/docs/react-without-jsx.html" class="link"> “React Without JSX”</a> to learn more.</p><br><br>
+
+            <div class="alert alert-dark" role="alert">
+                <form id="form" type="post" action="https://www.freecodecamp.com/email-submit">
+                    <div class="form-group">
+                        <label for="email"><b>Enroll for beta updates </b></label>
+                        <input name="email" type="email" id="email" placeholder="Enter a valid email!" class="form-control" aria-describedby="emailHelp">
+                        <small id="emailHelp">We'll never share your email with anyone else.</small>
+                    </div>
+                    <input id="submit" type="submit" class="btn btn-primary">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="bootstrap/bundle.js"></script>
+<script src="bootstrap/jquery-3.3.1.slim.min.js"></script>
+<script src="bootstrap/popper.min.js"></script>
+<script src="bootstrap/bootstrap.min.js"></script>
+</body>
+</html>
